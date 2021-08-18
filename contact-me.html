@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>My Contact Details</h1>
-    <p>My functional address</p>
-    <p>01758768668668</p>
-    <p>myEmail@gmail.com</p>
 
-    <hr>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>My Contact Details</h1>
+  <table cellspacing="10">
+    <tr>
+      <td>Address:</td>
+      <td>Main street 12, <br> 345567 Californy</td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td>01758768668668</td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>tikpi@gmail.com</td>
+    </tr>
     <form class="mycontact" action="index.html" method="post">
-      <label>your name</label>
-      <input type="text" name="" value="">
-      <input type="submit"><br>
-      <input type="color" name="" value="">
-      <input type="checkbox" name="" value="">
+      <tr>
+        <td><label>Today is:<label></td>
+          <td>
+            <input type="date" id="visite" name="visite-date"
+            value="2021-08-17" min="2021-01-01" max="2021-12-31">
+          </td>
+      </tr>
+      <tr>
+        <td><label>your name</label></td>
+        <td><input type="text" name="myName" value=""></td>
+      </tr>
+      <tr>
+        <td><label>your password</label></td>
+        <td><input type="password" name="mypwd" value=""></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="color" name="" value=""></td>
+        <td><input type="checkbox" name="" value=""></td>
+      </tr>
+      <tr>
+        <td><label>Write your comment please:</label><br></td>
+        <td><textarea name="name" rows="4" cols="40"></textarea></td>
+      </tr>
+      <tr>
+        <td><label>please send pictures/documents:</label></td>
+        <td><input type="file" name="youDoc" value=""></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit"></td>
+      </tr>
     </form>
-
-  </body>
+  </table>
+</body>
 </html>
